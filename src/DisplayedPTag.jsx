@@ -1,12 +1,16 @@
-import React from 'react';
 
-const DisplayedPTag = () => {
-  return (
-    <>
-      <h1>The text below should change</h1>
-      <p>{ /*You will need to change this in code. */ }</p>
-    </>
-  )
+
+import React, { Component } from 'react'
+
+export class DisplayedPTag extends Component {
+  render() {
+    return (
+      <div>
+              <h1>The text below should change</h1>
+              <p>{ this.props.state.text }</p>
+      </div>
+    )
+  }
 }
 
-export default DisplayedPTag;
+export default DisplayedPTag

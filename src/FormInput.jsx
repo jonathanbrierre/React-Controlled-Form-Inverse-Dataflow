@@ -9,8 +9,8 @@ class FormInput extends Component {
         <input
           type="text"
           name="text"
-          onChange={ () => { console.log("You will need to change this in code." ) }}
-          value={"You will need to change this in code."}/>
+          onChange={this.props.onChange}
+          value={this.props.stateText}/>
       </form>
     );
   }
